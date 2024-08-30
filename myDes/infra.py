@@ -50,7 +50,7 @@ class BitArray:
 
     def __eq__(self, other: 'BitArray') -> bool:
         if not isinstance(other, BitArray):
-            return NotImplemented
+            raise NotImplemented
         return self.bit_list == other.bit_list
     
     def __hash__(self) -> int:
